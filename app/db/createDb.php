@@ -7,12 +7,12 @@ require 'connDb.php';
 
 // table editeurs 
 
-$pdo->exec("CREATE TABLE Editeurs (
-    ID_edit             Int  Auto_increment  NOT NULL ,
+$pdo->exec("CREATE TABLE editeurs (
+    id_edit INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     nom_editeur         Varchar (255) NOT NULL ,
-    date_edition        Date NOT NULL ,
+    date_edition TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP , 
+    descri     text NOT NULL,
     Jeux_le_plus_vendu  Varchar (255) NOT NULL
-    ,CONSTRAINT Editeurs_PK PRIMARY KEY (ID_edit)
 )ENGINE=InnoDB");
 
 echo 'Table : Editeurs ';
@@ -21,14 +21,16 @@ echo 'Table : Editeurs ';
 // table Jeux 
 
 
-$pdo->exec("CREATE TABLE Jeux (
-    ID_jeux       Int  Auto_increment  NOT NULL ,
+$pdo->exec("CREATE TABLE jeux (
+    id_jeux     INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     nom_jeux      Varchar (255) NOT NULL ,
-    date_parution Date NOT NULL ,
-    ID_edit       Int NOT NULL
-,CONSTRAINT Jeux_PK PRIMARY KEY (ID_jeux)
+    date_sortie TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP , 
+    descrip     text NOT NULL,
+    ft_image VARCHAR(255) NOT NULL,
+    user_id int DEFAULT NULL
 
-,CONSTRAINT Jeux_Editeurs_FK FOREIGN KEY (ID_edit) REFERENCES Editeurs(ID_edit)
+
+,FOREIGN KEY (user_id) REFERENCES editeurs (id_edit) ON DELETE NO ACTION ON UPDATE NO ACTION
 )ENGINE=InnoDB");
 
 echo 'Table : Jeux ';
@@ -36,15 +38,17 @@ echo 'Table : Jeux ';
 
 // table Plateforme 
 
-$pdo->exec("CREATE TABLE Plateforme (
-    ID_plateforme  Int  Auto_increment  NOT NULL ,
+$pdo->exec("CREATE TABLE plateforme (
+    id_plateforme  Int  Auto_increment  NOT NULL ,
     nom_plateforme Varchar (255) NOT NULL ,
-    date_creation  Date NOT NULL
-,CONSTRAINT Plateforme_PK PRIMARY KEY (ID_plateforme)
+    descript     text NOT NULL,
+    date_creation TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP 
+,CONSTRAINT Plateforme_PK PRIMARY KEY (id_plateforme)
 )ENGINE=InnoDB");
 
 echo 'Table - Plateforme toutes les tables sont crées!';
 
 
-?>
+
+
 

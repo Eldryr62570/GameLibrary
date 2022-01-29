@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '240a34cd3bdc2d965f9067d7e0504b147a908e22',
+        'reference' => '6437659b6d27419648c961c92c8c68b240a68b03',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '240a34cd3bdc2d965f9067d7e0504b147a908e22',
+            'reference' => '6437659b6d27419648c961c92c8c68b240a68b03',
             'dev_requirement' => false,
         ),
         'altorouter/altorouter' => array(
@@ -35,6 +35,15 @@
             'install_path' => __DIR__ . '/../filp/whoops',
             'aliases' => array(),
             'reference' => 'a63e5e8f26ebbebf8ed3c5c691637325512eb0dc',
+            'dev_requirement' => false,
+        ),
+        'fzaninotto/faker' => array(
+            'pretty_version' => 'v1.9.2',
+            'version' => '1.9.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../fzaninotto/faker',
+            'aliases' => array(),
+            'reference' => '848d8125239d7dbf8ab25cb7f054f1a630e68c2e',
             'dev_requirement' => false,
         ),
         'psr/log' => array(
