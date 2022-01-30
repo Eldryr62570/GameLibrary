@@ -1,4 +1,6 @@
-
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,6 +48,19 @@
                     </div>
                     <button class="submit-btn">Send</button>
                 </form>
+                <?php 
+                //Message d'envoie du mail
+                if(isset($_SESSION)){
+                    if(isset($_SESSION["verif"])){
+                        if($_SESSION["verif"]==true){
+                            echo'<div class="valid">Message envoyé a l\'administrateur !</div>' ;
+                        }
+                        //Pour que la session se vide si on recharge la page 
+                        $_SESSION["verif"]= [];
+                    }
+                    
+                }
+                ?>
             </div>
         </div>
     </section>

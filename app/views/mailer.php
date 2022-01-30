@@ -1,8 +1,9 @@
 <?php
-    
+    session_start();
+    $_SESSION["verif"]= "";
     $to  = 'jordan.moulin62570@gmail.com'; 
     $subject = 'Ticket Joueur';
-    
+
     if(isset($_POST)){
         if($_POST["email"]!=null && $_POST["message"]!=null && $_POST["name"]!=null){
             $email = $_POST["email"];
@@ -21,5 +22,7 @@
     
 
     // Envoi
-    mail($to, $subject, $message, implode("\r\n", $headers));
+    if(mail($to, $subject, $message, implode("\r\n", $headers))){
+        $_SESSION["verif"] = true ;
+    }
 header("Location:mail.view.php");

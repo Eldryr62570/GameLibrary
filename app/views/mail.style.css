@@ -203,3 +203,12 @@ textarea:valid+label {
   }
 }
 /*Verification envoi mail*/
+.valid{
+  font-family: 'Arimo', sans-serif;
+  padding: 10px;
+  color : rgb(13, 160, 0);
+}
+.invalid{
+  font-family: 'Arimo', sans-serif;
+  color:rgb(255, 115, 0);
+}
