@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,9 +31,9 @@
                 </div>
             </div>
             <div class="contact-form-wrapper">
-                <form action="./mailer/mailer.php" method="post">
+                <form action="mailer.php" method="POST">
                     <div class="form-item" >
-                        <input type="text" name="sender" required>
+                        <input type="text" name="name" required>
                         <label>Name:</label>
                     </div>
                     <div class="form-item">
