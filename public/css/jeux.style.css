@@ -1,0 +1,395 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color:rgb(0,0,0);
+    color:#FEFEFE;
+}
+
+a{
+    color:#eeeded;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+h1{
+    font-size:80px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand{
+    font-size:60px;
+    display: inline-block;
+    font-family: 'Titillium Web', sans-serif;}
+
+h4 {
+    font-size: 2em;
+}
+
+/* nav barre  */
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    background-color:#52057b;
+    padding: 10px;
+    width: 65%;
+    display: inline-block;
+    border-radius: 5px;
+    max-height: 80px;
+    margin-right:10px;
+}
+
+.close-icon i{
+    font-size:60px;
+    float: left;
+    cursor: pointer;
+}
+
+.nav-list{
+    list-style-type:none;
+    overflow: hidden;
+}
+
+.nav-item a{
+    float: right;
+    display:block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color:#fff;
+}
+
+.nav-item a:hover{
+    background-color: rgb(0,0,0,0.1);
+}
+
+.hide{
+    display: none;
+}
+
+.bar-icon{
+    font-size: 60px;
+    display: inline-block;
+    margin-right:10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* canvas banniere  */
+
+.banniere{
+    position: relative;
+    left: -2vw;
+    max-width: 70%;
+    text-align: center;
+    margin-top: -300px;
+    margin-bottom: 300px;
+}
+
+.banniere .canvas{
+    position: relative;
+    left: 0%;
+    height: 119vh;
+    width: 100vw;
+    display: flex;
+    background-size: cover;
+    margin-top: 25%;
+
+
+}
+
+.banniere h2{
+    color: #ffffff;
+    font-size: 2.2em;
+    text-transform: capitalize;
+    position: relative;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.932);
+	width: 100vw;
+	text-align: center;
+    margin-top: -580px;
+    left: 0vw;
+    font-size: 45px;
+
+}
+.contenu p:nth-child(2){
+    color: rgb(241, 241, 241);
+    font-size: 1.8em;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.932);
+}
+
+/* bouton Banniere */
+.btn1{
+    font-size: 1em;
+    color: #fff;
+    background: #000000a6;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    position: relative;
+	left: 25%;
+}
+
+.btn1:hover{
+    letter-spacing: 4px;
+}
+
+/*  box recherche  */
+
+.search-box{
+    border: solid 1px #52057b;
+    margin-top: 30%;
+    padding: 40px;
+    display:flex;
+    justify-content: center;
+    box-shadow:1px 2px 3px #52057b;
+}
+
+.search-box select{
+    padding: 10px;
+}
+
+.search-box input{
+    padding: 10px;
+}
+
+.search-box button{
+    padding: 10px;
+    background-color:#fff;
+    color:#000000;
+}
+
+.search-box button:hover{
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 1px 2px 3px #fff;
+}
+
+/* search box for smrtphones */
+@media screen and (max-width: 460px){
+    .search-box input, .search-box button, .search-box select{
+        min-width: 300px;
+        margin-top: 5px;
+    }    
+
+}
+
+/* JEUX VIDEO  */
+.contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.contenu .box{
+    padding: 30px 10px;
+    width: 350px;
+    margin: 20px;
+    border: 2px solid rgb(163, 158, 158);
+    border-radius: 1.2em;
+    box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
+}
+
+.contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.contenu .datesortie h5 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.contenu .box .imbox img{
+    position: relative;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.contenu .box .text{
+    text-align: center;
+    font-weight: 400px;
+    color: rgb(255, 255, 255);
+   
+}
+
+.menu .contenu .box .text h3{
+    font-weight: 400;
+}
+
+.contenu .box h2 {
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* mise en page css editeurs */
+
+.container{
+    margin: 20px;
+    padding: 20px;
+}
+
+.subforum{
+    margin-top:20px;
+}
+
+.subforum-title{
+    color:#ffffff;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.932);
+    padding: 5px;
+    border-radius: 5px;
+    margin:4px;
+    margin-top: 5%;
+    background-image: url(../img/jeuxvideobanner.jpg);
+    background-size: cover;
+    cursor: default;
+}
+
+.subforum-title2{
+    color:#ffffff;
+    text-shadow: 4px 4px 30px rgba(0, 0, 0, 0.932);
+    padding: 5px;
+    border-radius: 5px;
+    margin:30px;
+    background-image: url(../img/jeuxvideo3.png);
+    background-size: cover;
+    cursor: default;
+    margin-top: 8%;
+    
+}
+
+
+.subforum-row-edit{
+    display: grid;
+    grid-template-columns: 15% 85% ;
+}
+
+.subforum-column{
+    padding: 20px;
+    margin:4px;
+    border-radius: 5px;
+    background-color:#111314;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* For the smartphones */
+@media screen and (max-width: 460px) {
+    .container{
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .subforum-row{
+        display: grid;
+        grid-template-columns:  25% 75%;
+        grid-template-rows: 35% 65%;
+    }
+
+    .subforum-devider{
+        display: block;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(190, 190, 190, 0), rgba(255, 255, 255, 0.75), rgba(190, 190, 190, 0));
+    }
+
+    .subforum-row-edit{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 40% 40%;
+    }
+
+    
+
+  }
+
+/* For the tablets */
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+    .container{
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .subforum-row{
+        display: grid;
+        grid-template-columns: 10% 60% 10% 20%;
+    }
+
+    .subforum-icon i{
+        font-size: 35px;
+    }
+
+    html{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+  }
+/*   Header Section    */
+
+header{
+    margin-inline: 10px;
+}
+
+
+
+
+/* nav barre smartphone  */
+
+
+@media screen and (max-width: 460px){
+    .navigation{
+        max-height: auto;
+    }
+    
+    .close-icon i{
+        font-size:30px;
+    }
+    
+    .nav-item a{
+        float:left;
+        display:inline;
+        margin-inline: 3px;
+        font-size: 10px;
+        padding: 5px;
+    }
+    
+    
+    .bar-icon{
+        font-size: 30px;
+    }
+ 
+    .brand{
+        font-size:20px;
+    }
+}
+
