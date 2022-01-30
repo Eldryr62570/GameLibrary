@@ -17,6 +17,7 @@ $router->map('GET', '/', 'index', 'index');
 $router->map('GET', '/jeux', 'jeux', 'jeux');
 $router->map('GET', '/404', '404', '404');
 
+
 // match routes 
 
 $match = $router->match();
