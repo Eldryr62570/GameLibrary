@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum</title>
-    <link rel="stylesheet" href="../../public/css/jeux.style.css">
+    <link rel="stylesheet" href="css/jeux.style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
@@ -69,7 +69,7 @@
                 <div class="box">
                     <h2><a href="#">Jeux vidéo 1</a></h2>
                     <div class="imbox">
-                        <img src="../../public/img/jeuxvideo1.jpg" alt="">
+                        <img src="img/jeuxvideo1.jpg" alt="">
                     </div>
                     <div class="text">
                         <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque. lorem</a></h3>
@@ -85,7 +85,7 @@
                 <div class="box">
                     <h2><a href="#">Jeux vidéo 1</a></h2>
                     <div class="imbox">
-                        <img src="../../public/img/jeuxvideo1.jpg" alt="">
+                        <img src="img/jeuxvideo1.jpg" alt="">
                     </div>
                     <div class="text">
                         <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
@@ -101,7 +101,7 @@
                 <div class="box">
                     <h2><a href="#">Jeux vidéo 1</a></h2>
                     <div class="imbox">
-                        <img src="../../public/img/jeuxvideo1.jpg" alt="">
+                        <img src="img/jeuxvideo1.jpg" alt="">
                     </div>
                     <div class="text">
                         <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
@@ -117,7 +117,7 @@
                 <div class="box">
                     <h2><a href="#">Jeux vidéo 1</a></h2>
                     <div class="imbox">
-                        <img src="../../public/img/jeuxvideo1.jpg" alt="">
+                        <img src="img/jeuxvideo1.jpg" alt="">
                     </div>
                     <div class="text">
                         <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
@@ -133,7 +133,7 @@
                 <div class="box">
                     <h2><a href="#">Jeux vidéo 1</a></h2>
                     <div class="imbox">
-                        <img src="../../public/img/jeuxvideo1.jpg" alt="">
+                        <img src="img/jeuxvideo1.jpg" alt="">
                     </div>
                     <div class="text">
                         <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
@@ -149,7 +149,7 @@
                 <div class="box">
                     <h2><a href="#">Jeux vidéo 1</a></h2>
                     <div class="imbox">
-                        <img src="../../public/img/jeuxvideo1.jpg" alt="">
+                        <img src="img/jeuxvideo1.jpg" alt="">
                     </div>
                     <div class="text">
                         <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
@@ -165,7 +165,7 @@
                 <div class="box">
                     <h2><a href="#">Jeux vidéo 1</a></h2>
                     <div class="imbox">
-                        <img src="../../public/img/jeuxvideo1.jpg" alt="">
+                        <img src="img/jeuxvideo1.jpg" alt="">
                     </div>
                     <div class="text">
                         <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
@@ -181,7 +181,7 @@
                 <div class="box">
                     <h2><a href="#">Jeux vidéo 1</a></h2>
                     <div class="imbox">
-                        <img src="../../public/img/jeuxvideo1.jpg" alt="">
+                        <img src="img/jeuxvideo1.jpg" alt="">
                     </div>
                     <div class="text">
                         <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
@@ -197,7 +197,7 @@
                 <div class="box">
                     <h2><a href="#">Jeux vidéo 1</a></h2>
                     <div class="imbox">
-                        <img src="../../public/img/jeuxvideo1.jpg" alt="">
+                        <img src="img/jeuxvideo1.jpg" alt="">
                     </div>
                     <div class="text">
                         <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
@@ -213,7 +213,7 @@
                 <div class="box">
                     <h2><a href="#">Jeux vidéo 1</a></h2>
                     <div class="imbox">
-                        <img src="../../public/img/jeuxvideo1.jpg" alt="">
+                        <img src="img/jeuxvideo1.jpg" alt="">
                     </div>
                     <div class="text">
                         <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
@@ -229,7 +229,7 @@
                 <div class="box">
                     <h2><a href="#">Jeux vidéo 1</a></h2>
                     <div class="imbox">
-                        <img src="../../public/img/jeuxvideo1.jpg" alt="">
+                        <img src="img/jeuxvideo1.jpg" alt="">
                     </div>
                     <div class="text">
                         <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
@@ -245,7 +245,7 @@
                 <div class="box">
                     <h2><a href="#">Jeux vidéo 1</a></h2>
                     <div class="imbox">
-                        <img src="../../public/img/jeuxvideo1.jpg" alt="">
+                        <img src="img/jeuxvideo1.jpg" alt="">
                     </div>
                     <div class="text">
                         <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
@@ -353,6 +353,6 @@
         navigation.classList.add("hide");
         }
         </script>
-        <script src="../../public/js/canvas.js"></script>
+        <script src="js/canvas.js"></script>
 </body>
 </html>

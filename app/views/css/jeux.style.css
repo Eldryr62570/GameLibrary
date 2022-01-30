@@ -255,7 +255,7 @@ h4 {
 
 .subforum-title{
     color:#ffffff;
-    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.932);
+    text-shadow: 10px 10px 70px rgba(0, 0, 0, 0.932);
     padding: 5px;
     border-radius: 5px;
     margin:4px;
@@ -267,7 +267,7 @@ h4 {
 
 .subforum-title2{
     color:#ffffff;
-    text-shadow: 4px 4px 30px rgba(0, 0, 0, 0.932);
+    text-shadow: 10px 10px 70px rgba(0, 0, 0, 0.932);
     padding: 5px;
     border-radius: 5px;
     margin:30px;

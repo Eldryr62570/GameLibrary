@@ -3,7 +3,7 @@ var img = new Image();
 // Variables utilisateur - les personnaliser pour changer l'image qui défile, ses
 // directions, et la vitesse.
 
-img.src = '../../public/img/canvasjeux.jpg';
+img.src = './img/canvasjeux.jpg';
 var CanvasXSize = 1480;
 var CanvasYSize = 850;
 var speed = 25; // plus elle est basse, plus c'est rapide

@@ -9,7 +9,7 @@ $whoops = new \Whoops\Run;
 $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
 $whoops->register();
 
-/* // Map routes 
+// Map routes 
 
 $router = new AltoRouter();
 
@@ -33,6 +33,6 @@ if( is_array($match['target'] ) ){
 
 } else {
     include "../app/views/404.view.php";
-} */
+} 
 
 
