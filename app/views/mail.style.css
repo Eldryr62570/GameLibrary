@@ -1,18 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
+/* latin-ext */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/titilliumweb/v14/NaPAcZTIAOhVxoMyOr9n_E7fdMbWAaxWXr0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/titilliumweb/v14/NaPAcZTIAOhVxoMyOr9n_E7fdMbWD6xW.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #6a9ac4;
-}
+
 
 #contact {
-  background-color: #6a9ac4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +50,7 @@ body {
 }
 
 .contact-form-wrapper {
-  background-color: #ffffff8f;
+  background-color: #8b8b8b8f;
   border-radius: 0 10px 10px 0;
 }
 
@@ -64,7 +76,7 @@ body {
 }
 
 h2 {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   color: #fff;
   font-size: clamp(30px, 6vw, 60px);
   letter-spacing: 2px;
@@ -111,7 +123,7 @@ img:active {
 }
 
 label, input, textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 label {
@@ -191,11 +203,11 @@ textarea:valid+label {
 }
 /*Verification envoi mail*/
 .valid{
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   padding: 10px;
   color : rgb(13, 160, 0);
 }
 .invalid{
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   color:rgb(255, 115, 0);
 }

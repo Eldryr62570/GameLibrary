@@ -14,6 +14,7 @@ session_start();
 </head>
 
 <body>
+    
     <section id="contact">
         <div class="contact-box">
             <div class="contact-links">
