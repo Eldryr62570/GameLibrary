@@ -39,8 +39,8 @@ $Editeurs = $requete2->fetchAll();
                 <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
                 <ul class="nav-list">
                     <li class="nav-item"><a href="index.view.php">Accueil</a></li>
-                    <li class="nav-item"><a href="#">Plateforme</a></li>
-                    <li class="nav-item"><a href="#">Editeurs de Jeux</a></li>
+                    <li class="nav-item"><a href="mail.view.php">Contact</a></li>
+                    <li class="nav-item"><a href="#editeur">Editeurs de Jeux</a></li>
                 </ul>
             </nav>
             <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
@@ -51,7 +51,7 @@ $Editeurs = $requete2->fetchAll();
         <section class="banniere" id="banniere"> <!-- suite en tête de page -->
                 <canvas id="canvas" class="canvas" width="1480" height="850"></canvas>
                 <h2>Retrouvez dans notre grande bibliothèques </h2>
-                <a href="#menu" class="btn1">Voir les jeux  </a>
+                <a href="#sectionjeux" class="btn1">Voir les jeux  </a>
         </section>
     
         <div class="search-box">
@@ -83,7 +83,7 @@ $Editeurs = $requete2->fetchAll();
     </header>
 
     <div class="container">
-        <div class="subforum">
+        <div class="subforum" id="sectionjeux">
             <div class="subforum-title">
                 <h1>Jeux vidéo</h1>
             </div>
@@ -108,7 +108,7 @@ $Editeurs = $requete2->fetchAll();
 
                 <?php }?>
             </div>
-            <div class="subforum-title2">
+            <div class="subforum-title2" id="editeur">
                 <h1>Editeurs de jeux vidéo</h1>
             </div>
 
