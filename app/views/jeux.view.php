@@ -1,8 +1,5 @@
 <?php 
-
-
 // on va chercher les jeux dans la base 
-
 require_once "../db/connDb.php";
 
 // requête 
@@ -11,18 +8,18 @@ $sql = "SELECT * FROM Jeux ORDER BY 'id_jeux' LIMIT 10;";
 $sqlediteur = "SELECT * FROM Editeurs ORDER BY 'id_edit' LIMIT 9;";
 
 
-// DESC 
-
 //EXECUTE LA REQUETE 
 
 $requete = $pdo->query($sql);
 $requete2 = $pdo->query($sqlediteur);
 // on recupere les données 
-
 $Jeux = $requete->fetchAll();
 $Editeurs = $requete2->fetchAll();
-
 ?>
+
+
+
+
 
 
 <html lang="fr">
@@ -111,14 +108,12 @@ $Editeurs = $requete2->fetchAll();
 
                 <?php }?>
             </div>
-                
-            
-            
             <div class="subforum-title2">
                 <h1>Editeurs de jeux vidéo</h1>
             </div>
 
             <div class="subforum-row-edit">
+
              <?php foreach($Editeurs as $Editeur){?>
                     <div class="subforum-icon subforum-column center">
                         <h2><?php echo $Editeur["nom_editeur"]; ?></h2>
@@ -133,6 +128,7 @@ $Editeurs = $requete2->fetchAll();
             </div>
         </div>
    </div>
+
 
 
 

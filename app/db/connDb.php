@@ -5,7 +5,7 @@
 $host = 'localhost';
 $db = 'gamelibrary';
 $user = 'root';
-$psw = '2108';
+$psw = '1234';
 $port = '3306';
 $charset = 'utf8mb4';
 $dsn = "mysql:host=$host;dbname=$db;port=$port;charset=$charset";
@@ -17,7 +17,9 @@ $options = [
 
 try {
     $pdo = new \PDO($dsn, $user, $psw, $options);
+
 } catch (\PDOException $e) {
     throw new \PDOException ($e->getMessage(), $e->getCode());
+
 }
 

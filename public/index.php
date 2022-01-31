@@ -3,6 +3,7 @@
 
 require dirname(__DIR__) . '../vendor/autoload.php';
 
+
 // Afficher Erreur 
 
 $whoops = new \Whoops\Run;
@@ -16,6 +17,8 @@ $router = new AltoRouter();
 $router->map('GET', '/', 'index', 'index');
 $router->map('GET', '/jeux', 'jeux', 'jeux');
 $router->map('GET', '/404', '404', '404');
+
+
 
 // match routes 
 
@@ -33,6 +36,5 @@ if( is_array($match['target'] ) ){
 
 } else {
     include "../app/views/404.view.php";
-} 
 
 
