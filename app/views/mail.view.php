@@ -10,6 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="mail.style.css">
+    <script src="https://kit.fontawesome.com/9121f1a0ce.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,33 +18,21 @@ session_start();
         <div class="contact-box">
             <div class="contact-links">
                 <h2>CONTACT</h2>
-                <div class="links">
-                    <div class="link">
-                        <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
-                    </div>
-                    <div class="link">
-                        <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
-                    </div>
-                    <div class="link">
-                        <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
-                    </div>
-                    <div class="link">
-                        <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
-                    </div>
-                </div>
+                <i class="fas fa-gamepad"></i>
+                
             </div>
             <div class="contact-form-wrapper">
                 <form action="mailer.php" method="POST">
                     <div class="form-item" >
-                        <input type="text" name="name" required>
+                        <input type="text" name="name_mail" required>
                         <label>Name:</label>
                     </div>
                     <div class="form-item">
-                        <input type="text" name="email" required>
+                        <input type="text" name="email_mail" required>
                         <label>Email:</label>
                     </div>
                     <div class="form-item">
-                        <textarea class="" name="message" required></textarea>
+                        <textarea class="" name="message_mail" required></textarea>
                         <label>Message:</label>
                     </div>
                     <button class="submit-btn">Send</button>

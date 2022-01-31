@@ -10,6 +10,7 @@ require 'connDb.php';
 $editeurs = [];
 $jeux = [];
 $plateforme = [];
+$mail = [];
 
 // clean table data
 
@@ -43,7 +44,7 @@ echo 'Editeurs, ';
 for ($i = 0; $i < 100; $i++){
 
     $pdo->exec("INSERT INTO jeux
-                SET user_id='10',
+                SET 
                     nom_jeux='{$faker->sentence(2)}',
                     ft_image='image{$faker->numberBetween($min = 1, $max = 5)}.jpg',
                     descrip='{$faker->paragraphs(rand(3,15), true)}',
@@ -70,7 +71,18 @@ for ($i = 0; $i < 10; $i++){
 }
 
 echo 'Editeurs, ';
+// mail fake (10 mails)
 
+for ($i = 0 ; $i<10;$i++){
+    $pdo->exec("INSERT INTO mail 
+                SET email_mail ='{$faker->email}',
+                    name_mail = '{$faker->name}',
+                    message_mail = '{$faker->paragraphs(rand(3,15),true)}'
+    ");
+    $mail[] = $pdo->lastInsertId();
+}
+
+echo'Mail ,';
 
 
 

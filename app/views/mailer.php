@@ -1,14 +1,16 @@
 <?php
     session_start();
+    require_once("../db/connDb.php");
+
     $_SESSION["verif"]= "";
     $to  = 'jordan.moulin62570@gmail.com'; 
     $subject = 'Ticket Joueur';
 
     if(isset($_POST)){
-        if($_POST["email"]!=null && $_POST["message"]!=null && $_POST["name"]!=null){
-            $email = $_POST["email"];
-            $message = $_POST["message"];
-            $name = $_POST["name"];
+        if($_POST["email_mail"]!=null && $_POST["message_mail"]!=null && $_POST["name_mail"]!=null){
+            $email = $_POST["email_mail"];
+            $message = $_POST["message_mail"];
+            $name = $_POST["name_mail"];
         }
     }
     
@@ -21,8 +23,27 @@
     $headers[] = 'From: '.$name.' : <'.$email.'>';
     
 
-    // Envoi
+    
     if(mail($to, $subject, $message, implode("\r\n", $headers))){
         $_SESSION["verif"] = true ;
     }
+
+    // Envoi en bdd pour sauvegarder les logs des emails !
+        // Ecriture de la requête
+        $sqlQuery = 'INSERT INTO mail(name_mail,email_mail,message_mail) VALUES (:name_mail,:email_mail,:message_mail)';
+    
+        // Préparation
+        $insertRecipe = $pdo->prepare($sqlQuery);
+    
+        // Exécution ! La recette est maintenant en base de données
+        $insertRecipe->execute([
+            'name_mail' => $name,
+            'email_mail' => $email,
+            'message_mail'=> $message
+        ]);
+    
+
+
+
+
 header("Location:mail.view.php");
