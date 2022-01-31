@@ -72,7 +72,7 @@
                         <img src="img/jeuxvideo1.jpg" alt="">
                     </div>
                     <div class="text">
-                        <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque. lorem</a></h3>
+                        <h3><a href="#"></a></h3>
                     </div>
                     <div class="datesortie">
                         <h5><a href="#">Le 01/01/01</a></h5>

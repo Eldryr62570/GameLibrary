@@ -18,7 +18,7 @@ $options = [
 try {
     $pdo = new \PDO($dsn, $user, $psw, $options);
     echo 'Database connexion established! connexion établie - ';
-} catch (\PDOExeption $e) {
-    throw new \PDOExeption ($e->getMessage(), $e->getCode());
+} catch (\PDOException $e) {
+    throw new \PDOException ($e->getMessage(), $e->getCode());
 }
 
