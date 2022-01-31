@@ -1,7 +1,8 @@
 <?php
 
 
-require '../vendor/autoload.php';
+require dirname(__DIR__) . '../vendor/autoload.php';
+
 
 // Afficher Erreur 
 
@@ -16,6 +17,7 @@ $router = new AltoRouter();
 $router->map('GET', '/', 'index', 'index');
 $router->map('GET', '/jeux', 'jeux', 'jeux');
 $router->map('GET', '/404', '404', '404');
+
 
 
 // match routes 
@@ -34,6 +36,5 @@ if( is_array($match['target'] ) ){
 
 } else {
     include "../app/views/404.view.php";
-}
 
 

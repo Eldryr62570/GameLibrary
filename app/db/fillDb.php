@@ -12,6 +12,7 @@ $jeux = [];
 $plateforme = [];
 $mail = [];
 
+
 // clean table data
 
 $pdo->exec("SET FOREIGN_KEY_CHECKS = 0");
@@ -45,6 +46,7 @@ for ($i = 0; $i < 100; $i++){
 
     $pdo->exec("INSERT INTO jeux
                 SET 
+
                     nom_jeux='{$faker->sentence(2)}',
                     ft_image='image{$faker->numberBetween($min = 1, $max = 5)}.jpg',
                     descrip='{$faker->paragraphs(rand(3,15), true)}',
@@ -71,6 +73,7 @@ for ($i = 0; $i < 10; $i++){
 }
 
 echo 'Editeurs, ';
+
 // mail fake (10 mails)
 
 for ($i = 0 ; $i<10;$i++){
@@ -83,6 +86,7 @@ for ($i = 0 ; $i<10;$i++){
 }
 
 echo'Mail ,';
+
 
 
 

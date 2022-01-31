@@ -46,6 +46,7 @@ $pdo->exec("CREATE TABLE plateforme (
 ,CONSTRAINT Plateforme_PK PRIMARY KEY (id_plateforme)
 )ENGINE=InnoDB");
 
+
 echo "Table : Platforme ";
 
 // table Mail
@@ -60,4 +61,5 @@ $pdo->exec("CREATE TABLE mail (
 echo "table : mail";
 
 echo'Table - Plateforme toutes les tables sont crées!';
+
 
