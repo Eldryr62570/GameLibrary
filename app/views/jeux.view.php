@@ -1,27 +1,28 @@
 <?php 
 
+
 // on va chercher les jeux dans la base 
 
 require_once "../db/connDb.php";
 
 // requête 
 
-$sql = "SELECT * FROM Jeux ORDER BY 'id_jeux' DESC";
+$sql = "SELECT * FROM Jeux ORDER BY 'id_jeux' LIMIT 10;";
+$sqlediteur = "SELECT * FROM Editeurs ORDER BY 'id_edit' LIMIT 9;";
+
+
+// DESC 
 
 //EXECUTE LA REQUETE 
 
 $requete = $pdo->query($sql);
-
+$requete2 = $pdo->query($sqlediteur);
 // on recupere les données 
 
 $Jeux = $requete->fetchAll();
+$Editeurs = $requete2->fetchAll();
 
 ?>
-
-
-<?php foreach($Jeux as $Jeu): ?>
-
-<?php endforeach; ?>
 
 
 <html lang="fr">
@@ -91,271 +92,48 @@ $Jeux = $requete->fetchAll();
             </div>
 
             <div class="contenu">
+                <?php foreach($Jeux as $Jeu){?>
                 <div class="box">
-                    <h2><a href="#">Jeux vidéo 1</a></h2>
-                    <div class="imbox">
-                        <img src="img/jeuxvideo1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3><a href="#"></a></h3>
-                    </div>
-                    <div class="datesortie">
-                        <h5><a href="#">Le 01/01/01</a></h5>
-                    </div>
-                    <div class="bouton3">
-                        <a href="#menu" class="btn1">Voir les jeux</a>
-
-                    </div>
+                                <h2><a href="#"><?php echo $Jeu["nom_jeux"]; ?></h2>
+                                <div class="imbox">
+                                    <img src="img/jeuxvideo1.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3><?php echo $Jeu["descrip"]; ?></h3>
+                                </div>
+                                <div class="datesortie">
+                                    <h5><?php echo $Jeu["date_sortie"]; ?></h5>
+                                </div>
+                                <div class="bouton3">
+                                    <a href="#menu" class="btn1">Voir les jeux</a>
+                                </div>
                 </div>
-                <div class="box">
-                    <h2><a href="#">Jeux vidéo 1</a></h2>
-                    <div class="imbox">
-                        <img src="img/jeuxvideo1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
-                    </div>
-                    <div class="datesortie">
-                        <h5><a href="#">Le 01/01/01</a></h5>
-                    </div>
-                    <div class="bouton3">
-                        <a href="#menu" class="btn1">Voir les jeux</a>
 
-                    </div>
-                </div>
-                <div class="box">
-                    <h2><a href="#">Jeux vidéo 1</a></h2>
-                    <div class="imbox">
-                        <img src="img/jeuxvideo1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
-                    </div>
-                    <div class="datesortie">
-                        <h5><a href="#">Le 01/01/01</a></h5>
-                    </div>
-                    <div class="bouton3">
-                        <a href="#menu" class="btn1">Voir les jeux</a>
-
-                    </div>
-                </div>
-                <div class="box">
-                    <h2><a href="#">Jeux vidéo 1</a></h2>
-                    <div class="imbox">
-                        <img src="img/jeuxvideo1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
-                    </div>
-                    <div class="datesortie">
-                        <h5><a href="#">Le 01/01/01</a></h5>
-                    </div>
-                    <div class="bouton3">
-                        <a href="#menu" class="btn1">Voir les jeux</a>
-
-                    </div>
-                </div>
-                <div class="box">
-                    <h2><a href="#">Jeux vidéo 1</a></h2>
-                    <div class="imbox">
-                        <img src="img/jeuxvideo1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
-                    </div>
-                    <div class="datesortie">
-                        <h5><a href="#">Le 01/01/01</a></h5>
-                    </div>
-                    <div class="bouton3">
-                        <a href="#menu" class="btn1">Voir les jeux</a>
-
-                    </div>
-                </div>
-                <div class="box">
-                    <h2><a href="#">Jeux vidéo 1</a></h2>
-                    <div class="imbox">
-                        <img src="img/jeuxvideo1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
-                    </div>
-                    <div class="datesortie">
-                        <h5><a href="#">Le 01/01/01</a></h5>
-                    </div>
-                    <div class="bouton3">
-                        <a href="#menu" class="btn1">Voir les jeux</a>
-
-                    </div>
-                </div>
-                <div class="box">
-                    <h2><a href="#">Jeux vidéo 1</a></h2>
-                    <div class="imbox">
-                        <img src="img/jeuxvideo1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
-                    </div>
-                    <div class="datesortie">
-                        <h5><a href="#">Le 01/01/01</a></h5>
-                    </div>
-                    <div class="bouton3">
-                        <a href="#menu" class="btn1">Voir les jeux</a>
-
-                    </div>
-                </div>
-                <div class="box">
-                    <h2><a href="#">Jeux vidéo 1</a></h2>
-                    <div class="imbox">
-                        <img src="img/jeuxvideo1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
-                    </div>
-                    <div class="datesortie">
-                        <h5><a href="#">Le 01/01/01</a></h5>
-                    </div>
-                    <div class="bouton3">
-                        <a href="#menu" class="btn1">Voir les jeux</a>
-
-                    </div>
-                </div>
-                <div class="box">
-                    <h2><a href="#">Jeux vidéo 1</a></h2>
-                    <div class="imbox">
-                        <img src="img/jeuxvideo1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
-                    </div>
-                    <div class="datesortie">
-                        <h5><a href="#">Le 01/01/01</a></h5>
-                    </div>
-                    <div class="bouton3">
-                        <a href="#menu" class="btn1">Voir les jeux</a>
-
-                    </div>
-                </div>
-                <div class="box">
-                    <h2><a href="#">Jeux vidéo 1</a></h2>
-                    <div class="imbox">
-                        <img src="img/jeuxvideo1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
-                    </div>
-                    <div class="datesortie">
-                        <h5><a href="#">Le 01/01/01</a></h5>
-                    </div>
-                    <div class="bouton3">
-                        <a href="#menu" class="btn1">Voir les jeux</a>
-
-                    </div>
-                </div>
-                <div class="box">
-                    <h2><a href="#">Jeux vidéo 1</a></h2>
-                    <div class="imbox">
-                        <img src="img/jeuxvideo1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
-                    </div>
-                    <div class="datesortie">
-                        <h5><a href="#">Le 01/01/01</a></h5>
-                    </div>
-                    <div class="bouton3">
-                        <a href="#menu" class="btn1">Voir les jeux</a>
-
-                    </div>
-                </div>
-                <div class="box">
-                    <h2><a href="#">Jeux vidéo 1</a></h2>
-                    <div class="imbox">
-                        <img src="img/jeuxvideo1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</a></h3>
-                    </div>
-                    <div class="datesortie">
-                        <h5><a href="#">Le 01/01/01</a></h5>
-                    </div>
-                    <div class="bouton3">
-                        <a href="#menu" class="btn1">Voir les jeux</a>
-
-                    </div>
-                </div>
+                <?php }?>
             </div>
-           
+                
+            
             
             <div class="subforum-title2">
                 <h1>Editeurs de jeux vidéo</h1>
             </div>
 
             <div class="subforum-row-edit">
-                <div class="subforum-icon subforum-column center">
-                    <h2><a href="#">Nom de l'éditeur + logo</a></h2>
-                </div>
-                <div class="subforum-description subforum-column">
-                    <h4><a href="#">Description :<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit et porro sunt reprehenderit corrupti aliquam minus, unde possimus tempore doloremque saepe odit ratione facere mollitia pariatur blanditiis sed, molestiae minima!</a></h4>
-                    <h4><a href="#">Jeux les plus vendu :<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam praesentium nobis laborum veritatis voluptatem accusantium dignissimos magnam labore asperiores, consequatur fuga tempore dolorum debitis, nihil suscipit modi tempora illo nesciunt!</a></h4>
+             <?php foreach($Editeurs as $Editeur){?>
+                    <div class="subforum-icon subforum-column center">
+                        <h2><?php echo $Editeur["nom_editeur"]; ?></h2>
+                    </div>
+                    <div class="subforum-description subforum-column">
+                        <h3><?php echo "Description : <br>".$Editeur["descri"]; ?></h3>
+                        <h4><?php echo "Date de création : <br> ".$Editeur["date_edition"] ?></h4>
                     
-                    <h3><a href="#">Date de création</a><h3>
-                </div>
-             </div>
-
-             <div class="subforum-row-edit">
-                <div class="subforum-icon subforum-column center">
-                    <h2><a href="#">Nom de l'éditeur</a></h2>
-                </div>
-                <div class="subforum-description subforum-column">
-                    <h4><a href="#">Description :<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit et porro sunt reprehenderit corrupti aliquam minus, unde possimus tempore doloremque saepe odit ratione facere mollitia pariatur blanditiis sed, molestiae minima!</a></h4>
-                    <h4><a href="#">Jeux les plus vendu :<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam praesentium nobis laborum veritatis voluptatem accusantium dignissimos magnam labore asperiores, consequatur fuga tempore dolorum debitis, nihil suscipit modi tempora illo nesciunt!</a></h4>
-                    
-                    <h3><a href="#">Date de création</a><h3>
-                </div>
-             </div>
-
-             <div class="subforum-row-edit">
-                <div class="subforum-icon subforum-column center">
-                    <h2><a href="#">Nom de l'éditeur</a></h2>
-                </div>
-                <div class="subforum-description subforum-column">
-                    <h4><a href="#">Description :<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit et porro sunt reprehenderit corrupti aliquam minus, unde possimus tempore doloremque saepe odit ratione facere mollitia pariatur blanditiis sed, molestiae minima!</a></h4>
-                    <h4><a href="#">Jeux les plus vendu :<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam praesentium nobis laborum veritatis voluptatem accusantium dignissimos magnam labore asperiores, consequatur fuga tempore dolorum debitis, nihil suscipit modi tempora illo nesciunt!</a></h4>
-                    
-                    <h3><a href="#">Date de création</a><h3>
-                </div>
-             </div>
-
-             <div class="subforum-row-edit">
-                <div class="subforum-icon subforum-column center">
-                    <h2><a href="#">Nom de l'éditeur</a></h2>
-                </div>
-                <div class="subforum-description subforum-column">
-                    <h4><a href="#">Description :<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit et porro sunt reprehenderit corrupti aliquam minus, unde possimus tempore doloremque saepe odit ratione facere mollitia pariatur blanditiis sed, molestiae minima!</a></h4>
-                    <h4><a href="#">Jeux les plus vendu :<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam praesentium nobis laborum veritatis voluptatem accusantium dignissimos magnam labore asperiores, consequatur fuga tempore dolorum debitis, nihil suscipit modi tempora illo nesciunt!</a></h4>
-                    
-                    <h3><a href="#">Date de création</a><h3>
-                </div>
-             </div>
-
-             <div class="subforum-row-edit">
-                <div class="subforum-icon subforum-column center">
-                    <h2><a href="#">Nom de l'éditeur</a></h2>
-                </div>
-                <div class="subforum-description subforum-column">
-                    <h4><a href="#">Description :<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit et porro sunt reprehenderit corrupti aliquam minus, unde possimus tempore doloremque saepe odit ratione facere mollitia pariatur blanditiis sed, molestiae minima!</a></h4>
-                    <h4><a href="#">Jeux les plus vendu :<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam praesentium nobis laborum veritatis voluptatem accusantium dignissimos magnam labore asperiores, consequatur fuga tempore dolorum debitis, nihil suscipit modi tempora illo nesciunt!</a></h4>
-                    
-                    <h3><a href="#">Date de création</a><h3>
-                </div>
-             </div>
-
-
-            
-            
+                        <h4><?php echo "Jeux les plus vendu : <br> ".$Editeur["Jeux_le_plus_vendu"] ?><h4>
+                    </div>
+               <?php }?>
+            </div>
         </div>
+   </div>
 
-        <!-- section jeux  -->
 
 
 
