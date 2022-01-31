@@ -32,7 +32,6 @@ function toggleState3() {
 }
 
 let imgObject = [
-
   "https://ichip.ru/images/cache/2022/1/17/fit_960_530_false_crop_1920_1080_0_0_q90_564332_c5f198e461065f31d937b6aca.webp",
   "https://cdn.eteknix.com/wp-content/uploads/2020/11/1-compressed-5-2.jpg",
   "https://th.bing.com/th/id/R.af58eba7a8c54cca8faf4ae3d3308d6c?rik=hc%2b5GSK4NvSG2w&pid=ImgRaw&r=0",

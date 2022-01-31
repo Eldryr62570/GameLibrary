@@ -381,6 +381,8 @@ a:hover {
 
 .footer-distributed{
 	width: 100%;
+  position:absolute;
+  bottom:0;
 	font: bold 16px sans-serif;
 	text-align: left;
 	padding: 50px 60px 40px;
