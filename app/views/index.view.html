@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSAP Accueil</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <header>
+    <div id="wrap">
+      <!--Le carrousel est une simple <ul> et chaque item est donc un <li> qui 
+      contient une <div class="card"on utilise flexbox pour les mettre en horizontale
+      je reserve une place pour chaque image(item) avec flex-bassis=taille initial et flex-shrink= retrecit
+      un element si la taille est trop grande pour le conteneur-->
+      <ul class="navbar">
+        <li>
+          <a href="#">Accueil</a>
+        </li>
+        <li>
+          <a href="#">Plateforme</a>
+          <ul>
+            <li><a href="#">nintendo</a></li>
+            <li>nintendo switch</li>
+            <li>nintendo 2ds</li>
+            <li><a href="#">plastation</a></li>
+            <li>ps4</li>
+            <li>ps5</li>
+            <li><a href="#">xbox</a></li>
+            <li>xbox one</li>
+            <li>xbox serie x</li>
+            <li><a href="#">pc</a></li>
+            <li>steam</li>
+            <li>epic games</li>
+            <li>batlle.net</li>
+            <li></li>
+          </ul>
+        </li>
+        <li>
+          <a href="jeux.view.php">Jeux</a>
+        </li>
+        <li>
+          <a href="#">FAQ</a>
+          <ul>
+            <li><a href="#">info utile</a></li>
+
+          </ul>
+        </li>
+        <li>
+          <a href="#">Tuto</a>
+          <ul>
+            <li><a href="#">video</a></li>
+            <li><a href="#">trophées</a></li>
+            <li><a href="#">code de triche</a></li>
+          </ul>
+        <li><a href="mail.view.php">Contact</a></li>
+        </li>
+        <li><a href="#">Recherche</a></li>
+      </ul>
+    </div>
+  </header>
+
+  
+    <div id="container">
+      <div id="toggleContainer">
+        <label>Carousel</label>
+        <div id="toggle">
+          <div id="outer3">
+
+          </div>
+          <label>Tiles</label>
+        </div>
+      </div>
+      <div id="galleryView">
+        <div id="galleryContainer">
+          <div id="leftView"></div>
+          <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+          <a id="linkTag">
+            <div id="mainView"></div>
+          </a>
+          <div id="rightView"></div>
+          <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+        </div>
+      </div>
+      <div id="tilesView">
+        <div id="tilesContainer"></div>
+      </div>
+    </div>
+
+
+
+
+
+  <div class="lignes">
+    <div class="l1"></div>
+    <div class="l2"></div>
+  </div>
+
+  <div class="container-first">
+
+    <h1 class="titre_main">Plonger dans le monde du jeux videos</h1>
+  </div>
+  <img src="./img/jeux-vidéos-png.png" class="logo">
+  <ul class="medias">
+    <a href="https://www.facebook.com/">
+      <li class="bulle"><img src="./img/facebook_emblem.png" class="logo-medias"></li>
+      <li class="bulle"><img src="./img/twiter.jpg" class="logo-medias"></li>
+      <li class="bulle"><img src="./img/Snapchat-Logo-2013-2048x1152.jpg" class="logo-medias"></li>
+      <li class="bulle"><img src="./img/youtub.jpg" class="logo-medias"></li>
+  </ul>
+  <div>
+
+    <!--pour le footer tré simplement j'ai entouré d'une div avec des lien hyper link reference  avec les item de
+    contact en general un ou 2 paragraphe et un input text (balise ou l'on peut ecrire dedans)pour le mail-->
+
+    <section>Footer</section>
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>Game Library</h3>
+
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Pricing</a>
+          ·
+          <a href="#">About</a>
+          ·
+          <a href="#">Faq</a>
+          ·
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">Company Name © 2015</p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p>Contact Us</p>
+
+        <form action="#" method="post">
+
+          <input type="text" name="email" placeholder="Email">
+
+
+        </form>
+
+      </div>
+
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
